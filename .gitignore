@@ -1,0 +1,6 @@
+wp-content/uploads
+.htaccess
+wp-content/plugins
+wp-content/themes/baccarose/dist
+wp-config.php
+package-lock.json
