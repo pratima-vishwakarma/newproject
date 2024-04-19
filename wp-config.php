@@ -18,6 +18,7 @@
  * @package WordPress
  */
 
+ define('FS_METHOD', 'direct');
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'naval_infra' );
@@ -80,6 +81,9 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+define( 'WP_DEBUG_LOG', false );
+define( 'WP_DEBUG_DISPLAY', false );
+define( 'SCRIPT_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
@@ -94,3 +98,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+define('WP_HOME', 'http://local.navalinfratech.com'); // Replace with your actual home URL
+define('WP_SITEURL', 'http://local.navalinfratech.com');
+
